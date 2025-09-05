@@ -1,0 +1,94 @@
+-- The C compiler identification is GNU 12.3.0
+-- The CXX compiler identification is GNU 12.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/g++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /home/li/miniconda3/bin/python3 (found version "3.13.5") found components: Interpreter 
+-- Found std_msgs: 4.9.0 (/opt/ros/humble/share/std_msgs/cmake)
+-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+-- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+-- Found tf2_geometry_msgs: 0.25.16 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+-- Found Eigen3: TRUE (found version "3.4.0") 
+-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+-- Found FastRTPS: /opt/ros/humble/include  
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found PythonInterp: /home/li/miniconda3/bin/python3 (found suitable version "3.13.5", minimum required is "3.6") 
+-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+-- Found PythonLibs: /home/li/miniconda3/lib/libpython3.13.so (found suitable version "3.13.5", minimum required is "3.5") 
+-- Using PYTHON_EXECUTABLE: /home/li/miniconda3/bin/python3
+-- Using PYTHON_INCLUDE_DIRS: /home/li/miniconda3/include/python3.13
+-- Using PYTHON_LIBRARIES: /home/li/miniconda3/lib/libpython3.13.so
+-- Found PythonExtra: .so  
+-- Using numpy include directory: /home/li/miniconda3/lib/python3.13/site-packages/numpy/_core/include
+-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/li/Time_various/build/irt_nav_msgs
+[  0%] [34m[1mGenerating C code for ROS interfaces[0m
+[  0%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[  0%] Built target ament_cmake_python_copy_irt_nav_msgs
+Traceback (most recent call last):
+  File [35m"/opt/ros/humble/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c"[0m, line [35m8[0m, in [35m<module>[0m
+    from rosidl_generator_c import generate_c
+  File [35m"/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_c/__init__.py"[0m, line [35m15[0m, in [35m<module>[0m
+    from rosidl_cmake import convert_camel_case_to_lower_case_underscore
+  File [35m"/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_cmake/__init__.py"[0m, line [35m24[0m, in [35m<module>[0m
+    from rosidl_parser.parser import parse_idl_file
+  File [35m"/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py"[0m, line [35m20[0m, in [35m<module>[0m
+    from lark import Lark
+[1;35mModuleNotFoundError[0m: [35mNo module named 'lark'[0m
+gmake[2]: *** [CMakeFiles/irt_nav_msgs__rosidl_generator_c.dir/build.make:199: rosidl_generator_c/irt_nav_msgs/msg/microstrain.h] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:212: CMakeFiles/irt_nav_msgs__rosidl_generator_c.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+Traceback (most recent call last):
+  File [35m"/opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp"[0m, line [35m8[0m, in [35m<module>[0m
+    from rosidl_generator_cpp import generate_cpp
+  File [35m"/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_cpp/__init__.py"[0m, line [35m17[0m, in [35m<module>[0m
+    from rosidl_cmake import generate_files
+  File [35m"/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_cmake/__init__.py"[0m, line [35m24[0m, in [35m<module>[0m
+    from rosidl_parser.parser import parse_idl_file
+  File [35m"/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py"[0m, line [35m20[0m, in [35m<module>[0m
+    from lark import Lark
+[1;35mModuleNotFoundError[0m: [35mNo module named 'lark'[0m
+gmake[2]: *** [CMakeFiles/irt_nav_msgs__cpp.dir/build.make:395: rosidl_generator_cpp/irt_nav_msgs/msg/microstrain.hpp] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:265: CMakeFiles/irt_nav_msgs__cpp.dir/all] Error 2
+running egg_info
+creating irt_nav_msgs.egg-info
+writing irt_nav_msgs.egg-info/PKG-INFO
+writing dependency_links to irt_nav_msgs.egg-info/dependency_links.txt
+writing top-level names to irt_nav_msgs.egg-info/top_level.txt
+writing manifest file 'irt_nav_msgs.egg-info/SOURCES.txt'
+reading manifest file 'irt_nav_msgs.egg-info/SOURCES.txt'
+writing manifest file 'irt_nav_msgs.egg-info/SOURCES.txt'
+[  0%] Built target ament_cmake_python_build_irt_nav_msgs_egg
+gmake: *** [Makefile:146: all] Error 2

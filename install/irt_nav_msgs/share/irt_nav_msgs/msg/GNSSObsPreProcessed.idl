@@ -1,0 +1,47 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from irt_nav_msgs/msg/GNSSObsPreProcessed.msg
+// generated code does not contain a copyright notice
+
+#include "irt_nav_msgs/msg/GNSSCorrection.idl"
+#include "irt_nav_msgs/msg/GNSSObs.idl"
+#include "std_msgs/msg/Header.idl"
+
+module irt_nav_msgs {
+  module msg {
+    struct GNSSObsPreProcessed {
+      std_msgs::msg::Header header;
+
+      uint32 counter;
+
+      double time_offset_gal_gps;
+
+      boolean is_ggto_valid;
+
+      irt_nav_msgs::msg::GNSSObs gnss_obs_ant_main;
+
+      irt_nav_msgs::msg::GNSSObs gnss_obs_ant_aux;
+
+      irt_nav_msgs::msg::GNSSObs dd_gnss_obs_dualantenna;
+
+      irt_nav_msgs::msg::GNSSObs dd_gnss_obs_time;
+
+      irt_nav_msgs::msg::GNSSObs dd_gnss_obs_rtcm;
+
+      sequence<irt_nav_msgs::msg::GNSSCorrection> gnss_corrections;
+
+      sequence<uint8> faulty_prn_main;
+
+      sequence<uint8> faulty_prn_aux;
+
+      boolean has_time_dd;
+
+      boolean has_dualantenna;
+
+      boolean has_dualantenna_dd;
+
+      boolean has_rtcm_dd;
+
+      boolean has_rtk;
+    };
+  };
+};

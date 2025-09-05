@@ -1,0 +1,11 @@
+source;share/boreas_msgs/hook/cmake_prefix_path.ps1
+source;share/boreas_msgs/hook/cmake_prefix_path.dsv
+source;share/boreas_msgs/hook/cmake_prefix_path.sh
+source;share/boreas_msgs/hook/ld_library_path_lib.ps1
+source;share/boreas_msgs/hook/ld_library_path_lib.dsv
+source;share/boreas_msgs/hook/ld_library_path_lib.sh
+source;share/boreas_msgs/local_setup.bash
+source;share/boreas_msgs/local_setup.dsv
+source;share/boreas_msgs/local_setup.ps1
+source;share/boreas_msgs/local_setup.sh
+source;share/boreas_msgs/local_setup.zsh

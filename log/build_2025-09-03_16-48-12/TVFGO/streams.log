@@ -1,0 +1,66 @@
+[0.006s] Invoking command in '/home/li/Time_various/build/TVFGO': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake /home/li/Time_various/src/timevariousFGO/TVFGO -DCMAKE_INSTALL_PREFIX=/home/li/Time_various/install/TVFGO
+[0.078s] -- The C compiler identification is GNU 12.3.0
+[0.141s] -- The CXX compiler identification is GNU 12.3.0
+[0.146s] -- Detecting C compiler ABI info
+[0.211s] -- Detecting C compiler ABI info - done
+[0.223s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.223s] -- Detecting C compile features
+[0.224s] -- Detecting C compile features - done
+[0.230s] -- Detecting CXX compiler ABI info
+[0.302s] -- Detecting CXX compiler ABI info - done
+[0.308s] -- Check for working CXX compiler: /usr/bin/g++ - skipped
+[0.308s] -- Detecting CXX compile features
+[0.308s] -- Detecting CXX compile features - done
+[0.310s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.598s] -- Found Python3: /home/li/miniconda3/bin/python3 (found version "3.13.5") found components: Interpreter 
+[0.674s] -- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)
+[0.698s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.701s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.705s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.714s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.724s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.753s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.756s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.833s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.850s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.876s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.881s] -- Looking for pthread.h
+[0.948s] -- Looking for pthread.h - found
+[0.949s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.007s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.008s] -- Found Threads: TRUE  
+[1.052s] -- Found rclcpp_components: 16.0.14 (/opt/ros/humble/share/rclcpp_components/cmake)
+[1.068s] -- Found rclcpp_lifecycle: 16.0.14 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)
+[1.080s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.135s] WARNING: Package name "TVFGO" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.
+[1.152s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.152s] -- Configured cppcheck include dirs: 
+[1.152s] -- Configured cppcheck exclude dirs and/or files: 
+[1.153s] -- Added test 'lint_cmake' to check CMake code style
+[1.154s] -- Added test 'uncrustify' to check C / C++ code style
+[1.154s] -- Configured uncrustify additional arguments: 
+[1.154s] -- Added test 'xmllint' to check XML markup files
+[1.155s] -- Configuring done
+[1.157s] -- Generating done
+[1.159s] -- Build files have been written to: /home/li/Time_various/build/TVFGO
+[1.166s] Invoked command in '/home/li/Time_various/build/TVFGO' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake /home/li/Time_various/src/timevariousFGO/TVFGO -DCMAKE_INSTALL_PREFIX=/home/li/Time_various/install/TVFGO
+[1.168s] Invoking command in '/home/li/Time_various/build/TVFGO': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/li/Time_various/build/TVFGO -- -j20 -l20
+[1.199s] Invoked command in '/home/li/Time_various/build/TVFGO' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/li/Time_various/build/TVFGO -- -j20 -l20
+[1.208s] Invoking command in '/home/li/Time_various/build/TVFGO': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/li/Time_various/build/TVFGO
+[1.212s] -- Install configuration: ""
+[1.212s] -- Installing: /home/li/Time_various/install/TVFGO/share/ament_index/resource_index/package_run_dependencies/TVFGO
+[1.213s] -- Installing: /home/li/Time_various/install/TVFGO/share/ament_index/resource_index/parent_prefix_path/TVFGO
+[1.213s] -- Installing: /home/li/Time_various/install/TVFGO/share/TVFGO/environment/ament_prefix_path.sh
+[1.213s] -- Installing: /home/li/Time_various/install/TVFGO/share/TVFGO/environment/ament_prefix_path.dsv
+[1.213s] -- Installing: /home/li/Time_various/install/TVFGO/share/TVFGO/environment/path.sh
+[1.213s] -- Installing: /home/li/Time_various/install/TVFGO/share/TVFGO/environment/path.dsv
+[1.213s] -- Installing: /home/li/Time_various/install/TVFGO/share/TVFGO/local_setup.bash
+[1.213s] -- Installing: /home/li/Time_various/install/TVFGO/share/TVFGO/local_setup.sh
+[1.213s] -- Installing: /home/li/Time_various/install/TVFGO/share/TVFGO/local_setup.zsh
+[1.213s] -- Installing: /home/li/Time_various/install/TVFGO/share/TVFGO/local_setup.dsv
+[1.213s] -- Installing: /home/li/Time_various/install/TVFGO/share/TVFGO/package.dsv
+[1.213s] -- Installing: /home/li/Time_various/install/TVFGO/share/ament_index/resource_index/packages/TVFGO
+[1.213s] -- Installing: /home/li/Time_various/install/TVFGO/share/TVFGO/cmake/TVFGOConfig.cmake
+[1.213s] -- Installing: /home/li/Time_various/install/TVFGO/share/TVFGO/cmake/TVFGOConfig-version.cmake
+[1.214s] -- Installing: /home/li/Time_various/install/TVFGO/share/TVFGO/package.xml
+[1.215s] Invoked command in '/home/li/Time_various/build/TVFGO' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/li/Time_various/build/TVFGO

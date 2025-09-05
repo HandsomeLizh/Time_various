@@ -1,0 +1,54 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from irt_nav_msgs/msg/NavFilter.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Header.idl"
+
+module irt_nav_msgs {
+  module msg {
+    typedef double double__18[18];
+    typedef double double__17[17];
+    typedef double double__3[3];
+    struct NavFilter {
+      std_msgs::msg::Header header;
+
+      boolean filter_enabled;
+
+      double gnss_obs_delay;
+
+      double__18 state_ekf;
+
+      double__17 var_ekf;
+
+      double vel_normed_ekf;
+
+      double__3 euler_ekf;
+
+      boolean update_exit_ekf;
+
+      double__3 ant_ecef_ekf;
+
+      double__3 ant_llh_ekf;
+
+      double__3 ant_vel_ekf;
+
+      double__18 state_ukf;
+
+      double__17 var_ukf;
+
+      double vel_normed_ukf;
+
+      double__3 euler_ukf;
+
+      boolean update_exit_ukf;
+
+      double__3 ant_ecef_ukf;
+
+      double__3 ant_llh_ukf;
+
+      double__3 ant_vel_ukf;
+
+      double filter_time;
+    };
+  };
+};

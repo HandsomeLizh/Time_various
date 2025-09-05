@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "irt_nav_msgs__py",
+		"source" : "/home/li/Time_various/build/irt_nav_msgs/irt_nav_msgs__py"
+	}
+}

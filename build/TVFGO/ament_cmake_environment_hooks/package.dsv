@@ -1,0 +1,4 @@
+source;share/TVFGO/local_setup.bash
+source;share/TVFGO/local_setup.dsv
+source;share/TVFGO/local_setup.sh
+source;share/TVFGO/local_setup.zsh

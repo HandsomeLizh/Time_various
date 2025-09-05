@@ -1,0 +1,8 @@
+setup.py
+boreas_msgs/__init__.py
+boreas_msgs.egg-info/PKG-INFO
+boreas_msgs.egg-info/SOURCES.txt
+boreas_msgs.egg-info/dependency_links.txt
+boreas_msgs.egg-info/top_level.txt
+boreas_msgs/msg/__init__.py
+boreas_msgs/msg/_sensor_pose.py

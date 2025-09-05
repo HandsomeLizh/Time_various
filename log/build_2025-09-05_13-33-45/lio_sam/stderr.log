@@ -1,0 +1,55 @@
+[33mCMake Warning at CMakeLists.txt:43 (add_executable):
+  Cannot generate a safe runtime search path for target
+  lio_sam_featureExtraction because files in some directories may conflict
+  with libraries in implicit directories:
+
+    runtime library [libz.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/li/miniconda3/lib
+    runtime library [libX11.so.6] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/li/miniconda3/lib
+
+  Some of these libraries may not be found correctly.
+
+[0m
+[33mCMake Warning at CMakeLists.txt:48 (add_executable):
+  Cannot generate a safe runtime search path for target
+  lio_sam_imageProjection because files in some directories may conflict with
+  libraries in implicit directories:
+
+    runtime library [libz.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/li/miniconda3/lib
+    runtime library [libX11.so.6] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/li/miniconda3/lib
+
+  Some of these libraries may not be found correctly.
+
+[0m
+[33mCMake Warning at CMakeLists.txt:52 (add_executable):
+  Cannot generate a safe runtime search path for target
+  lio_sam_imuPreintegration because files in some directories may conflict
+  with libraries in implicit directories:
+
+    runtime library [libz.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/li/miniconda3/lib
+    runtime library [libX11.so.6] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/li/miniconda3/lib
+
+  Some of these libraries may not be found correctly.
+
+[0m
+[33mCMake Warning at CMakeLists.txt:56 (add_executable):
+  Cannot generate a safe runtime search path for target
+  lio_sam_mapOptimization because files in some directories may conflict with
+  libraries in implicit directories:
+
+    runtime library [libz.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/li/miniconda3/lib
+    runtime library [libX11.so.6] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/li/miniconda3/lib
+    runtime library [libgomp.so.1] in /usr/lib/gcc/x86_64-linux-gnu/12 may be hidden by files in:
+      /home/li/miniconda3/lib
+
+  Some of these libraries may not be found correctly.
+
+[0m
+/usr/bin/ld: warning: libtbb.so.2, needed by /usr/lib/x86_64-linux-gnu/libopencv_core.so.4.5.4d, may conflict with libtbb.so.12

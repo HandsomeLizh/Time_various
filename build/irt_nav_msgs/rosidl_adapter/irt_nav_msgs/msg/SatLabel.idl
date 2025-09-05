@@ -1,0 +1,91 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from irt_nav_msgs/msg/SatLabel.msg
+// generated code does not contain a copyright notice
+
+#include "geometry_msgs/msg/Vector3.idl"
+#include "irt_nav_msgs/msg/GaussianComponent.idl"
+
+module irt_nav_msgs {
+  module msg {
+    struct SatLabel {
+      uint8 integrity_flag;
+
+      uint32 prn;
+
+      geometry_msgs::msg::Vector3 sat_pos;
+
+      geometry_msgs::msg::Vector3 sat_vel;
+
+      double psr;
+
+      double psr_raw;
+
+      double psr_satclk_corrected;
+
+      double psr_dev_measured;
+
+      double psr_dev_preproc;
+
+      double dr;
+
+      double dr_raw;
+
+      double dr_satclk_corrected;
+
+      double dr_dev_preproc;
+
+      double cp;
+
+      double cp_raw;
+
+      double cp_satclk_corrected;
+
+      double cp_dev_measured;
+
+      double locktime;
+
+      double psr_correction;
+
+      double cn0;
+
+      boolean cycle_slip;
+
+      double psr_residual;
+
+      double dr_residual;
+
+      double cp_residual;
+
+      double elevation_angle;
+
+      double azimuth_angle;
+
+      double cmc;
+
+      double drc;
+
+      @verbatim (language="comment", text=
+        "calculated data from VBI")
+      string factor;
+
+      uint8 dim;
+
+      sequence<double> residuals;
+
+      sequence<irt_nav_msgs::msg::GaussianComponent> gaussian;
+
+      double weight;
+
+      sequence<double> data;
+
+      @verbatim (language="comment", text=
+        "labels" "\n"
+        "0 == opensky 1 == Multipath 2 == NLOS 3 == invalid")
+      uint8 label;
+
+      double label_dev;
+
+      string msg;
+    };
+  };
+};

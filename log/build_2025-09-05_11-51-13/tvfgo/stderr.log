@@ -1,0 +1,17 @@
+[31mCMake Error at CMakeLists.txt:42 (find_package):
+  By not providing "FindPC.cmake" in CMAKE_MODULE_PATH this project has asked
+  CMake to find a package configuration file provided by "PC", but CMake did
+  not find one.
+
+  Could not find a package configuration file provided by "PC" with any of
+  the following names:
+
+    PCConfig.cmake
+    pc-config.cmake
+
+  Add the installation prefix of "PC" to CMAKE_PREFIX_PATH or set "PC_DIR" to
+  a directory containing one of the above files.  If "PC" provides a separate
+  development package or SDK, be sure it has been installed.
+
+[0m
+gmake: *** [Makefile:226: cmake_check_build_system] Error 1

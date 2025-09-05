@@ -1,0 +1,30 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from irt_nav_msgs/msg/GaussianMixture.msg
+// generated code does not contain a copyright notice
+
+#include "irt_nav_msgs/msg/GaussianComponent.idl"
+#include "std_msgs/msg/Header.idl"
+
+module irt_nav_msgs {
+  module msg {
+    struct GaussianMixture {
+      std_msgs::msg::Header header;
+
+      double tow;
+
+      uint32 sat;
+
+      string factor;
+
+      string environment;
+
+      double runtime;
+
+      uint8 dim;
+
+      sequence<double> residuals;
+
+      sequence<irt_nav_msgs::msg::GaussianComponent> gaussian;
+    };
+  };
+};

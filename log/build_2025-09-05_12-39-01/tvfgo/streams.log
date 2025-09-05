@@ -1,0 +1,101 @@
+[0.010s] Invoking command in '/home/li/Time_various/build/tvfgo': AMENT_PREFIX_PATH=/home/li/Time_various/install/irt_nav_msgs:/home/li/Time_various/install/boreas_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/li/Time_various/install/irt_nav_msgs:/home/li/Time_various/install/boreas_msgs CONDA_PROMPT_MODIFIER=(base) LD_LIBRARY_PATH=/home/li/Time_various/install/irt_nav_msgs/lib:/home/li/Time_various/install/boreas_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/li/Time_various/install/irt_nav_msgs/lib/python3.13/site-packages:/home/li/Time_various/install/boreas_msgs/lib/python3.13/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/li/Time_various/build/tvfgo -- -j20 -l20
+[0.036s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.68.0") found components: date_time 
+[0.036s] -- Found NumCpp: /usr/local/include (found version 2.14.2)
+[0.037s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.148s] -- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)
+[0.167s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.168s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.173s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.181s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.189s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.210s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.211s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.281s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.317s] -- Found rclcpp_components: 16.0.14 (/opt/ros/humble/share/rclcpp_components/cmake)
+[0.329s] -- Found rclcpp_lifecycle: 16.0.14 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)
+[0.339s] -- Found yaml_cpp_vendor: 8.0.2 (/opt/ros/humble/share/yaml_cpp_vendor/cmake)
+[0.340s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.345s] -- Found message_filters: 4.3.8 (/opt/ros/humble/share/message_filters/cmake)
+[0.347s] -- Found pluginlib: 5.1.0 (/opt/ros/humble/share/pluginlib/cmake)
+[0.356s] -- Found tf2: 0.25.16 (/opt/ros/humble/share/tf2/cmake)
+[0.366s] -- Found tf2_eigen: 0.25.16 (/opt/ros/humble/share/tf2_eigen/cmake)
+[0.411s] -- Found visualization_msgs: 4.9.0 (/opt/ros/humble/share/visualization_msgs/cmake)
+[0.450s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[0.455s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.65.0") found components: system filesystem date_time iostreams serialization 
+[0.469s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[0.613s] -- Found Eigen3: /usr/include/eigen3 (found version "3.4.0") 
+[0.694s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[0.701s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[0.701s] [0m** WARNING ** io features related to pcap will be disabled[0m
+[0.820s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[0.826s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[0.832s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[0.940s] -- Found Qhull version 8.0.2
+[1.057s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[1.167s] -- looking for PCL_COMMON
+[1.167s] -- looking for PCL_KDTREE
+[1.167s] -- looking for PCL_OCTREE
+[1.167s] -- looking for PCL_SEARCH
+[1.167s] -- looking for PCL_SAMPLE_CONSENSUS
+[1.168s] -- looking for PCL_FILTERS
+[1.168s] -- looking for PCL_2D
+[1.168s] -- looking for PCL_GEOMETRY
+[1.168s] -- looking for PCL_IO
+[1.168s] -- looking for PCL_FEATURES
+[1.169s] -- looking for PCL_ML
+[1.169s] -- looking for PCL_SEGMENTATION
+[1.169s] -- looking for PCL_VISUALIZATION
+[1.169s] -- looking for PCL_SURFACE
+[1.170s] -- looking for PCL_REGISTRATION
+[1.170s] -- looking for PCL_KEYPOINTS
+[1.170s] -- looking for PCL_TRACKING
+[1.170s] -- looking for PCL_RECOGNITION
+[1.171s] -- looking for PCL_STEREO
+[1.171s] -- looking for PCL_APPS
+[1.172s] -- looking for PCL_IN_HAND_SCANNER
+[1.172s] -- looking for PCL_MODELER
+[1.172s] -- looking for PCL_POINT_CLOUD_EDITOR
+[1.172s] -- looking for PCL_OUTOFCORE
+[1.173s] -- looking for PCL_PEOPLE
+[1.175s] -- Found keyboard_handler: 0.0.5 (/opt/ros/humble/share/keyboard_handler/cmake)
+[1.177s] -- Found pcl_conversions: 2.4.5 (/opt/ros/humble/share/pcl_conversions/cmake)
+[1.192s] -- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[1.203s] -- Found irt_nav_msgs: 0.0.0 (/home/li/Time_various/install/irt_nav_msgs/share/irt_nav_msgs/cmake)
+[1.206s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[1.207s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[1.207s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.218s] -- Found tf2_sensor_msgs: 0.25.16 (/opt/ros/humble/share/tf2_sensor_msgs/cmake)
+[1.221s] -- Found boreas_msgs: 0.0.0 (/home/li/Time_various/install/boreas_msgs/share/boreas_msgs/cmake)
+[1.232s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.288s] Error parsing '/home/li/Time_various/src/timevariousFGO/TVFGO/package.xml':
+[1.288s] Traceback (most recent call last):
+[1.288s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 150, in <module>
+[1.288s]     main()
+[1.288s]     ~~~~^^
+[1.289s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 53, in main
+[1.289s]     raise e
+[1.289s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 49, in main
+[1.289s]     package = parse_package_string(
+[1.289s]         args.package_xml.read(), filename=args.package_xml.name)
+[1.289s]   File "/home/li/miniconda3/lib/python3.13/site-packages/catkin_pkg/package.py", line 786, in parse_package_string
+[1.289s]     raise InvalidPackage('Error(s):%s' % (''.join(['\n- %s' % e for e in errors])), filename)
+[1.289s] catkin_pkg.package.InvalidPackage: Error(s) in package '/home/li/Time_various/src/timevariousFGO/TVFGO/package.xml':
+[1.289s] Error(s):
+[1.289s] - The generic dependency on 'std_msgs' is redundant with: build_depend, build_export_depend, exec_depend
+[1.298s] [31mCMake Error at /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:95 (message):
+[1.298s]   execute_process(/home/li/miniconda3/bin/python3
+[1.298s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py
+[1.298s]   /home/li/Time_various/src/timevariousFGO/TVFGO/package.xml
+[1.298s]   /home/li/Time_various/build/tvfgo/ament_cmake_core/package.cmake) returned
+[1.299s]   error code 1
+[1.299s] Call Stack (most recent call first):
+[1.299s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:49 (_ament_package_xml)
+[1.299s]   /opt/ros/humble/share/ament_lint_auto/cmake/ament_lint_auto_find_test_dependencies.cmake:31 (ament_package_xml)
+[1.299s]   CMakeLists.txt:68 (ament_lint_auto_find_test_dependencies)
+[1.299s] 
+[1.299s] [0m
+[1.299s] -- Configuring incomplete, errors occurred!
+[1.299s] See also "/home/li/Time_various/build/tvfgo/CMakeFiles/CMakeOutput.log".
+[1.299s] See also "/home/li/Time_various/build/tvfgo/CMakeFiles/CMakeError.log".
+[1.310s] gmake: *** [Makefile:226: cmake_check_build_system] Error 1
+[1.312s] Invoked command in '/home/li/Time_various/build/tvfgo' returned '2': AMENT_PREFIX_PATH=/home/li/Time_various/install/irt_nav_msgs:/home/li/Time_various/install/boreas_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/li/Time_various/install/irt_nav_msgs:/home/li/Time_various/install/boreas_msgs CONDA_PROMPT_MODIFIER=(base) LD_LIBRARY_PATH=/home/li/Time_various/install/irt_nav_msgs/lib:/home/li/Time_various/install/boreas_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/li/Time_various/install/irt_nav_msgs/lib/python3.13/site-packages:/home/li/Time_various/install/boreas_msgs/lib/python3.13/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/li/Time_various/build/tvfgo -- -j20 -l20

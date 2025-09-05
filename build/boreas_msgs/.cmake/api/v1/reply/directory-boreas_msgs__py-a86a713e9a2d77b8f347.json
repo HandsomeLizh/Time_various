@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "boreas_msgs__py",
+		"source" : "/home/li/Time_various/build/boreas_msgs/boreas_msgs__py"
+	}
+}

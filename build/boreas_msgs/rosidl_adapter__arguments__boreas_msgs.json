@@ -1,0 +1,6 @@
+{
+  "package_name": "boreas_msgs",
+  "non_idl_tuples": [
+    "/home/li/Time_various/src/timevariousFGO/boreas_msgs:msg/SensorPose.msg"
+  ]
+}

@@ -1,0 +1,38 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from irt_nav_msgs/msg/RTCMV3.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Header.idl"
+
+module irt_nav_msgs {
+  module msg {
+    typedef double double__3[3];
+    typedef uint8 uint8__40[40];
+    typedef double double__200[200];
+    typedef uint8 uint8__200[200];
+    typedef uint16 uint16__200[200];
+    struct RTCMV3 {
+      std_msgs::msg::Header header;
+
+      double tow;
+
+      double__3 base;
+
+      uint8__40 svid;
+
+      double__200 pseudorange;
+
+      uint8__200 type;
+
+      double__200 carrier;
+
+      double__200 cn0;
+
+      uint16__200 locktime;
+
+      uint16__200 lli;
+
+      uint16 reference_station_id;
+    };
+  };
+};

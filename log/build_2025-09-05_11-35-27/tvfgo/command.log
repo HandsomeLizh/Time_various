@@ -1,0 +1,2 @@
+Invoking command in '/home/li/Time_various/build/tvfgo': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake /home/li/Time_various/src/timevariousFGO/TVFGO -DCMAKE_INSTALL_PREFIX=/home/li/Time_various/install/tvfgo
+Invoked command in '/home/li/Time_various/build/tvfgo' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake /home/li/Time_various/src/timevariousFGO/TVFGO -DCMAKE_INSTALL_PREFIX=/home/li/Time_various/install/tvfgo

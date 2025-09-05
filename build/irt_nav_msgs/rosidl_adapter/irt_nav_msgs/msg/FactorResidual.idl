@@ -1,0 +1,19 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from irt_nav_msgs/msg/FactorResidual.msg
+// generated code does not contain a copyright notice
+
+#include "irt_nav_msgs/msg/ResidualSample.idl"
+
+module irt_nav_msgs {
+  module msg {
+    struct FactorResidual {
+      string factor_name;
+
+      uint64 current_state_key;
+
+      sequence<string> related_keys;
+
+      sequence<irt_nav_msgs::msg::ResidualSample> samples;
+    };
+  };
+};

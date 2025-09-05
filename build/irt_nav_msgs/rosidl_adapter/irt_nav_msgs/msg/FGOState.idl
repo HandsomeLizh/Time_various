@@ -1,0 +1,41 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from irt_nav_msgs/msg/FGOState.msg
+// generated code does not contain a copyright notice
+
+#include "geometry_msgs/msg/Pose.idl"
+#include "geometry_msgs/msg/Twist.idl"
+#include "std_msgs/msg/Header.idl"
+
+module irt_nav_msgs {
+  module msg {
+    struct FGOState {
+      std_msgs::msg::Header header;
+
+      geometry_msgs::msg::Pose pose;
+
+      geometry_msgs::msg::Twist vel;
+
+      geometry_msgs::msg::Twist acc;
+
+      sequence<double> pose_var;
+
+      sequence<double> vel_var;
+
+      sequence<double> acc_var;
+
+      double heading;
+
+      sequence<double> imu_bias;
+
+      sequence<double> imu_bias_var;
+
+      sequence<double> cbd;
+
+      sequence<double> cbd_var;
+
+      sequence<uint32> amb;
+
+      sequence<double> amb_var;
+    };
+  };
+};

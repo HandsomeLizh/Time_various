@@ -1,0 +1,233 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-093c437f9fac7ad86c64.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				},
+				{
+					"build" : "boreas_msgs__py",
+					"jsonFile" : "directory-boreas_msgs__py-a86a713e9a2d77b8f347.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/li/Time_various/build/boreas_msgs/boreas_msgs__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "boreas_msgs",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_boreas_msgs_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_boreas_msgs_egg-0b460a37fbf3bcfc5cc7.json",
+					"name" : "ament_cmake_python_build_boreas_msgs_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_boreas_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_boreas_msgs-2fd5633d29dadb41a12e.json",
+					"name" : "ament_cmake_python_copy_boreas_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "boreas_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-boreas_msgs-5f78bc1f1703db350b0c.json",
+					"name" : "boreas_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "boreas_msgs__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-boreas_msgs__cpp-a6bd76b9dc8e54609082.json",
+					"name" : "boreas_msgs__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "boreas_msgs__py::@6b17c73c490124237aa9",
+					"jsonFile" : "target-boreas_msgs__py-b5adcbdfa6ea76b92253.json",
+					"name" : "boreas_msgs__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "boreas_msgs__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-boreas_msgs__rosidl_generator_c-acd9043fe5b1c501533b.json",
+					"name" : "boreas_msgs__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "boreas_msgs__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-boreas_msgs__rosidl_generator_py-acf8cf0825a5842c786f.json",
+					"name" : "boreas_msgs__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "boreas_msgs__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-boreas_msgs__rosidl_typesupport_c-1f54d8d72647c289fdca.json",
+					"name" : "boreas_msgs__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "boreas_msgs__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-boreas_msgs__rosidl_typesupport_c__pyext-014a4be42bbb51758c79.json",
+					"name" : "boreas_msgs__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "boreas_msgs__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-boreas_msgs__rosidl_typesupport_cpp-2486b9aa2216e0fc4379.json",
+					"name" : "boreas_msgs__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "boreas_msgs__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-boreas_msgs__rosidl_typesupport_fastrtps_c-81fa6aefac6f57b6eb39.json",
+					"name" : "boreas_msgs__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "boreas_msgs__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-boreas_msgs__rosidl_typesupport_fastrtps_c__pyext-bd2de00a1504703daba6.json",
+					"name" : "boreas_msgs__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "boreas_msgs__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-boreas_msgs__rosidl_typesupport_fastrtps_cpp-7b1eb01da5ff96997551.json",
+					"name" : "boreas_msgs__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "boreas_msgs__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-boreas_msgs__rosidl_typesupport_introspection_c-03ed5c6614459cfa6f3e.json",
+					"name" : "boreas_msgs__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "boreas_msgs__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-boreas_msgs__rosidl_typesupport_introspection_c__pyext-f524cb43fd096314a1e4.json",
+					"name" : "boreas_msgs__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "boreas_msgs__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-boreas_msgs__rosidl_typesupport_introspection_cpp-fbfdcf0e2ef6977edfd4.json",
+					"name" : "boreas_msgs__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "boreas_msgs_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-boreas_msgs_uninstall-a23a33db0d8fa54fb9ba.json",
+					"name" : "boreas_msgs_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-adfaf87c50e81056480d.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/li/Time_various/build/boreas_msgs",
+		"source" : "/home/li/Time_various/src/timevariousFGO/boreas_msgs"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

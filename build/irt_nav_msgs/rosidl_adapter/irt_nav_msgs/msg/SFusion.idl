@@ -1,0 +1,40 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from irt_nav_msgs/msg/SFusion.msg
+// generated code does not contain a copyright notice
+
+#include "irt_nav_msgs/msg/PVAGeodetic.idl"
+#include "std_msgs/msg/Header.idl"
+
+module irt_nav_msgs {
+  module msg {
+    struct SFusion {
+      std_msgs::msg::Header header;
+
+      double simulation_time;
+
+      uint64 counter;
+
+      double tow;
+
+      double filter_tow;
+
+      uint64 pps_counter;
+
+      sequence<double> state;
+
+      sequence<double> cov;
+
+      uint16 num_used_stat_ant1;
+
+      uint16 num_used_stat_ant2;
+
+      uint64 rtcm_counter;
+
+      boolean filter_inited_success;
+
+      boolean filter_inited;
+
+      irt_nav_msgs::msg::PVAGeodetic pva_geodetic;
+    };
+  };
+};

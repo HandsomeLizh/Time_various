@@ -1,0 +1,88 @@
+[0.010s] Invoking command in '/home/li/Time_various/build/tvfgo': AMENT_PREFIX_PATH=/home/li/Time_various/install/irt_nav_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/li/Time_various/install/irt_nav_msgs CONDA_PROMPT_MODIFIER=(base) LD_LIBRARY_PATH=/home/li/Time_various/install/irt_nav_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/li/Time_various/install/irt_nav_msgs/lib/python3.13/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/li/Time_various/build/tvfgo -- -j20 -l20
+[0.036s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.68.0") found components: date_time 
+[0.036s] -- Found NumCpp: /usr/local/include (found version 2.14.2)
+[0.036s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.139s] -- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)
+[0.158s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.159s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.163s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.170s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.178s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.199s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.200s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.273s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.306s] -- Found rclcpp_components: 16.0.14 (/opt/ros/humble/share/rclcpp_components/cmake)
+[0.317s] -- Found rclcpp_lifecycle: 16.0.14 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)
+[0.331s] -- Found yaml_cpp_vendor: 8.0.2 (/opt/ros/humble/share/yaml_cpp_vendor/cmake)
+[0.332s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.340s] -- Found message_filters: 4.3.8 (/opt/ros/humble/share/message_filters/cmake)
+[0.343s] -- Found pluginlib: 5.1.0 (/opt/ros/humble/share/pluginlib/cmake)
+[0.358s] -- Found tf2: 0.25.16 (/opt/ros/humble/share/tf2/cmake)
+[0.377s] -- Found tf2_eigen: 0.25.16 (/opt/ros/humble/share/tf2_eigen/cmake)
+[0.416s] -- Found visualization_msgs: 4.9.0 (/opt/ros/humble/share/visualization_msgs/cmake)
+[0.456s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[0.461s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.65.0") found components: system filesystem date_time iostreams serialization 
+[0.476s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[0.618s] -- Found Eigen3: /usr/include/eigen3 (found version "3.4.0") 
+[0.721s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[0.726s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[0.726s] [0m** WARNING ** io features related to pcap will be disabled[0m
+[0.846s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[0.852s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[0.858s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[0.972s] -- Found Qhull version 8.0.2
+[1.087s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[1.198s] -- looking for PCL_COMMON
+[1.198s] -- looking for PCL_KDTREE
+[1.199s] -- looking for PCL_OCTREE
+[1.199s] -- looking for PCL_SEARCH
+[1.199s] -- looking for PCL_SAMPLE_CONSENSUS
+[1.199s] -- looking for PCL_FILTERS
+[1.199s] -- looking for PCL_2D
+[1.199s] -- looking for PCL_GEOMETRY
+[1.200s] -- looking for PCL_IO
+[1.200s] -- looking for PCL_FEATURES
+[1.200s] -- looking for PCL_ML
+[1.200s] -- looking for PCL_SEGMENTATION
+[1.201s] -- looking for PCL_VISUALIZATION
+[1.201s] -- looking for PCL_SURFACE
+[1.201s] -- looking for PCL_REGISTRATION
+[1.201s] -- looking for PCL_KEYPOINTS
+[1.202s] -- looking for PCL_TRACKING
+[1.202s] -- looking for PCL_RECOGNITION
+[1.202s] -- looking for PCL_STEREO
+[1.203s] -- looking for PCL_APPS
+[1.203s] -- looking for PCL_IN_HAND_SCANNER
+[1.203s] -- looking for PCL_MODELER
+[1.204s] -- looking for PCL_POINT_CLOUD_EDITOR
+[1.204s] -- looking for PCL_OUTOFCORE
+[1.204s] -- looking for PCL_PEOPLE
+[1.205s] -- Found keyboard_handler: 0.0.5 (/opt/ros/humble/share/keyboard_handler/cmake)
+[1.206s] -- Found pcl_conversions: 2.4.5 (/opt/ros/humble/share/pcl_conversions/cmake)
+[1.221s] -- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[1.237s] -- Found irt_nav_msgs: 0.0.0 (/home/li/Time_various/install/irt_nav_msgs/share/irt_nav_msgs/cmake)
+[1.241s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[1.242s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[1.242s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.253s] -- Found tf2_sensor_msgs: 0.25.16 (/opt/ros/humble/share/tf2_sensor_msgs/cmake)
+[1.261s] -- Configuring incomplete, errors occurred!
+[1.261s] See also "/home/li/Time_various/build/tvfgo/CMakeFiles/CMakeOutput.log".
+[1.261s] [31mCMake Error at CMakeLists.txt:56 (find_package):
+[1.261s]   By not providing "Findboreas_msgs.cmake" in CMAKE_MODULE_PATH this project
+[1.262s]   has asked CMake to find a package configuration file provided by
+[1.262s]   "boreas_msgs", but CMake did not find one.
+[1.262s] 
+[1.262s]   Could not find a package configuration file provided by "boreas_msgs" with
+[1.262s]   any of the following names:
+[1.262s] 
+[1.262s]     boreas_msgsConfig.cmake
+[1.262s]     boreas_msgs-config.cmake
+[1.262s] 
+[1.262s]   Add the installation prefix of "boreas_msgs" to CMAKE_PREFIX_PATH or set
+[1.262s]   "boreas_msgs_DIR" to a directory containing one of the above files.  If
+[1.262s]   "boreas_msgs" provides a separate development package or SDK, be sure it
+[1.262s]   has been installed.
+[1.263s] 
+[1.263s] [0m
+[1.271s] gmake: *** [Makefile:226: cmake_check_build_system] Error 1
+[1.273s] Invoked command in '/home/li/Time_various/build/tvfgo' returned '2': AMENT_PREFIX_PATH=/home/li/Time_various/install/irt_nav_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/li/Time_various/install/irt_nav_msgs CONDA_PROMPT_MODIFIER=(base) LD_LIBRARY_PATH=/home/li/Time_various/install/irt_nav_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/li/Time_various/install/irt_nav_msgs/lib/python3.13/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/li/Time_various/build/tvfgo -- -j20 -l20
