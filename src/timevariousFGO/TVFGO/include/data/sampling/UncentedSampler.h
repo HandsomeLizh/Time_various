@@ -135,6 +135,7 @@ namespace fgo::data::sampler {
     SigmaPoints::SharedPtr sigma_generator_;
     SamplerConfig::SharedPtr param_;
     gtsam::Matrix cov_;
+    gtsam::Vector mean_; // <--- 新增的成员变量，用于存储均值
   };
 
 

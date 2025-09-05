@@ -1,9 +1,0 @@
-/home/li/Time_various/build/TVFGO/CMakeFiles/uninstall.dir
-/home/li/Time_various/build/TVFGO/CMakeFiles/TVFGO_uninstall.dir
-/home/li/Time_various/build/TVFGO/CMakeFiles/test.dir
-/home/li/Time_various/build/TVFGO/CMakeFiles/edit_cache.dir
-/home/li/Time_various/build/TVFGO/CMakeFiles/rebuild_cache.dir
-/home/li/Time_various/build/TVFGO/CMakeFiles/list_install_components.dir
-/home/li/Time_various/build/TVFGO/CMakeFiles/install.dir
-/home/li/Time_various/build/TVFGO/CMakeFiles/install/local.dir
-/home/li/Time_various/build/TVFGO/CMakeFiles/install/strip.dir

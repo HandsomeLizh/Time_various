@@ -133,7 +133,15 @@ namespace fgo::data::sampler {
   UnscentedSampler::UnscentedSampler(const SamplerConfig::SharedPtr &param,
                                      const gtsam::Vector &mean,
                                      const gtsam::noiseModel::Base::shared_ptr &model)
-    : gtsam::Sampler(mean, model), param_(param) {
+    : gtsam::Sampler(model->sigmas()), param_(param), mean_(mean) {
+
+    
+    // 提取完整的协方差矩阵以供本类使用
+    auto gaussian_model = boost::dynamic_pointer_cast<gtsam::noiseModel::Gaussian>(model);
+    if (!gaussian_model)
+      throw std::runtime_error("UnscentedSampler::UnscentedSampler: Noise model is not Gaussian!");
+    cov_ = gaussian_model->covariance();
+    
     if (param_->sigmaType == "Merwe")
       sigma_generator_ = std::make_shared<MerweScaledSigmaPoints>(mean.size(),
                                                                   param_->alpha,
@@ -168,7 +176,7 @@ namespace fgo::data::sampler {
 
   UnscentedSampler::UnscentedSampler(const SamplerConfig::SharedPtr &param, const gtsam::Vector &mean,
                                      const gtsam::Matrix &cov)
-    : gtsam::Sampler(mean, gtsam::noiseModel::Gaussian::Covariance(cov, false)), param_(param), cov_(cov) {
+    : gtsam::Sampler(cov.diagonal().cwiseSqrt()), param_(param), cov_(cov), mean_(mean) {
     if (param_->sigmaType == "Merwe")
       sigma_generator_ = std::make_shared<MerweScaledSigmaPoints>(mean.size(),
                                                                   param_->alpha,
@@ -198,7 +206,7 @@ namespace fgo::data::sampler {
 
 
   gtsam::Matrix UnscentedSampler::samples() const {
-    const auto sigma_points = sigma_generator_->sigma_points(this->mean(), cov_, false);
+    const auto sigma_points = sigma_generator_->sigma_points(this->mean_, cov_, false);
     return sigma_points;
   }
 

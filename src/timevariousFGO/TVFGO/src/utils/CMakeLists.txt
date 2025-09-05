@@ -15,28 +15,28 @@
 #  Author: Haoming Zhang (haoming.zhang@rwth-aachen.de)
 #          Jiandong Chen (jiandong.chen@rwth-aachen.de)
 
-set(TVFGO_DATA_NAME
-    ${TVFGO_PREFIX}_data
+set(TVFGO_UTIL_NAME
+    ${TVFGO_PREFIX}_util
 )
-add_library(${TVFGO_DATA_NAME} 
+add_library(${TVFGO_UTIL_NAME} 
     SHARED
-    UnscentedSampler.cpp
+    GPUtils.cpp
+        Pose3Utils.cpp
 )
-target_include_directories(${TVFGO_DATA_NAME}
+target_include_directories(${TVFGO_UTIL_NAME}
     PUBLIC
     ${TVFGO_INCLUDE}
 )
-target_link_libraries(${TVFGO_DATA_NAME}
+target_link_libraries(${TVFGO_UTIL_NAME}
     PUBLIC
     ${TVFGO_LINK}
-    ${TVFGO_BUILD_TARGET}
 )
-ament_target_dependencies(${TVFGO_DATA_NAME}
+ament_target_dependencies(${TVFGO_UTIL_NAME}
     PUBLIC
     ${TVFGO_ROS_DEP}
 )
-set(ONLINEFGO_BUILD_TARGET
+set(TVFGO_BUILD_TARGET
     ${TVFGO_BUILD_TARGET}
-    ${TVFGO_DATA_NAME}
+    ${TVFGO_UTIL_NAME}
     PARENT_SCOPE
 )

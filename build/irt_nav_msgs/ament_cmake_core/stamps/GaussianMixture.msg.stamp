@@ -1,9 +1,0 @@
-std_msgs/Header			header
-float64                 tow
-uint32					sat
-string					factor
-string 				    environment
-float64				    runtime
-uint8 					dim
-float64[]				residuals
-GaussianComponent[]		gaussian

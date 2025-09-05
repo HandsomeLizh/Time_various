@@ -76,17 +76,38 @@ find_package(GTSAM REQUIRED)
 find_package(GTSAM_UNSTABLE REQUIRED)
 find_package(GTSAMCMakeTools)
 
-if(BUILD_TESTING)
-  find_package(ament_lint_auto REQUIRED)
-  # the following line skips the linter which checks for copyrights
-  # comment the line when a copyright and license is added to all source files
-  set(ament_cmake_copyright_FOUND TRUE)
-  # the following line skips cpplint (only works in a git repo)
-  # comment the line when this package is in a git repo and when
-  # a copyright and license is added to all source files
-  set(ament_cmake_cpplint_FOUND TRUE)
-  ament_lint_auto_find_test_dependencies()
+include(GtsamMakeConfigFile)
+include(GtsamBuildTypes)
+include(GtsamTesting)
+
+
+if(ENABLE_VISUAL)
+    if(ENABLE_BEACON)
+        find_package(Beacon REQUIRED HINTS /workspace/mylib)
+    endif()
 endif()
+
+# Ceres to solve the NLS problem
+#find_package(Ceres 2.0 REQUIRED) # ToDo: actually we don't need ceres, but i just put it here
+
+
+# Simple multi-threading,
+set(CMAKE_THREAD_PREFER_PTHREAD ON)
+set(THREADS_PREFER_PTHREAD_FLAG ON)
+
+# geographic lib for coordinate frame conversions
+find_package(GeographicLib REQUIRED)
+
+# rosbag2 utility
+find_package(rosbag2_cpp REQUIRED)
+find_package(rosbag2_storage REQUIRED)
+find_package(rosbag2_storage_default_plugins REQUIRED)
+
+# for unittest scripts, only if we need
+set(CMAKE_MODULE_PATH "${CMAKE_MODULE_PATH}" "${GTSAM_DIR}/../GTSAMCMakeTools")
+
+
+
 
 # **************************************************************************** #
 # ************************** TimeVarious FGO SETUP ******************************** #
@@ -95,6 +116,7 @@ set(TVFGO_PREFIX
     )
 
 # ************************** INCLUDE & LINK ******************************* #
+# add_subdirectory(third_party) # used by ${tools_lib_list}
 set(TVFGO_ROS_DEP
         "rclcpp"
         "rclcpp_components"
@@ -116,6 +138,14 @@ set(TVFGO_ROS_DEP
         # "boreas_msgs"
 )
 
+# ToDo: split ros deps into different categories
+set(TVFGO_ROS_MSG_DEP
+        "std_msgs"
+        "sensor_msgs"
+        "irt_nav_msgs"
+        "nav_msgs"
+        "pcl_msgs"
+)
 
 set(TVFGO_GENERAL_INCLUDE
         ${GTSAM_INCLUDE_DIR}
@@ -125,12 +155,104 @@ set(TVFGO_GENERAL_INCLUDE
 )
 
 
+set(TVFGO_GENERAL_LINK
+        ${GeographicLib_LIBRARIES}
+        gtsam
+        gtsam_unstable
+        Threads::Threads
+        Eigen3::Eigen
+        pthread
+        tbb
+        tbbmalloc
+        ${PCL_LIBRARIES}
+        ${OpenMP_CXX_FLAGS}
+        ${OpenCV_LIBS}
+)
+
 set(TVFGO_INCLUDE
         ${PROJECT_SOURCE_DIR}
         ${CMAKE_CURRENT_LIST_DIR}/third_party
         ${CMAKE_CURRENT_LIST_DIR}/include
-        ${ONLINEFGO_GENERAL_INCLUDE}
+        ${TVFGO_GENERAL_INCLUDE}
 )
+
+
+set(TVFGO_LINK
+        ${tools_lib_list}
+        rosbag2_cpp::rosbag2_cpp
+        rosbag2_storage::rosbag2_storage
+        ${TVFGO_GENERAL_LINK}
+)
+set(TVFGO_BUILD_TARGET
+)# it is empty and target name will be collected by subdirs
+add_compile_options(${OpenMP_CXX_FLAGS})
+
+if(ENABLE_VISUAL AND ENABLE_BEACON)
+    add_compile_definitions(ENABLE_BEACON)
+    set(TVFGO_LINK
+        ${TVFGO_LINK}
+        Beacon::BeaconModule
+    )
+    set(TVFGO_INCLUDE
+        ${TVFGO_INCLUDE}
+        ${BEACON_INCLUDE_DIRS}
+    )
+endif()
+
+# ************************** Subdirectory ********************************** #
+# subdirs are inter-dependent, change the order with caution
+# add_subdirectory(src/utils)
+# add_subdirectory(src/sensor)
+# add_subdirectory(src/solver)
+# add_subdirectory(src/integrator)
+add_subdirectory(src/data)
+# add_subdirectory(src/graph)
+# add_subdirectory(src/gnss_fgo)
+# add_subdirectory(src/dataset)
+# add_subdirectory(src/offline_process)
+
+
+# ************************** Nodes ********************************** #
+
+set(node_dep_ros  #ToDo @haoming check and clean this
+        "rclcpp"
+        "rclcpp_components"
+        "rclcpp_lifecycle"
+        "cv_bridge"
+        "yaml_cpp_vendor"
+        "rosidl_default_generators"
+        "std_msgs"
+        "sensor_msgs"
+        "irt_nav_msgs"
+        "pluginlib"
+        "rmw"
+        "rmw_implementation_cmake"
+        "rmw_implementation"
+        "rosbag2_cpp"
+)
+
+# add_subdirectory(src/node)
+
+
+# ************************** Install ********************************** #
+
+# pluginlib_export_plugin_description_file(${PROJECT_NAME} integrator_plugins.xml)
+# pluginlib_export_plugin_description_file(${PROJECT_NAME} datasets_plugins.xml)
+# ament_export_dependencies(${node_dep_ros})
+# ament_export_include_directories(include/${PROJECT_NAME} include)
+# ament_export_libraries(${TVFGO_BUILD_TARGET})
+
+if(BUILD_TESTING)
+  find_package(ament_lint_auto REQUIRED)
+  # the following line skips the linter which checks for copyrights
+  # comment the line when a copyright and license is added to all source files
+  set(ament_cmake_copyright_FOUND TRUE)
+  # the following line skips cpplint (only works in a git repo)
+  # comment the line when this package is in a git repo and when
+  # a copyright and license is added to all source files
+  set(ament_cmake_cpplint_FOUND TRUE)
+  ament_lint_auto_find_test_dependencies()
+endif()
 
 ament_package()
 

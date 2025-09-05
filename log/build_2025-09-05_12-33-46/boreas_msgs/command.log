@@ -1,6 +1,0 @@
-Invoking command in '/home/li/Time_various/build/boreas_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake /home/li/Time_various/src/timevariousFGO/boreas_msgs -DCMAKE_INSTALL_PREFIX=/home/li/Time_various/install/boreas_msgs
-Invoked command in '/home/li/Time_various/build/boreas_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake /home/li/Time_various/src/timevariousFGO/boreas_msgs -DCMAKE_INSTALL_PREFIX=/home/li/Time_various/install/boreas_msgs
-Invoking command in '/home/li/Time_various/build/boreas_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/li/Time_various/build/boreas_msgs -- -j20 -l20
-Invoked command in '/home/li/Time_various/build/boreas_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/li/Time_various/build/boreas_msgs -- -j20 -l20
-Invoking command in '/home/li/Time_various/build/boreas_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/li/Time_various/build/boreas_msgs
-Invoked command in '/home/li/Time_various/build/boreas_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/li/Time_various/build/boreas_msgs

@@ -1,8 +1,0 @@
-source;share/TVFGO/hook/cmake_prefix_path.ps1
-source;share/TVFGO/hook/cmake_prefix_path.dsv
-source;share/TVFGO/hook/cmake_prefix_path.sh
-source;share/TVFGO/local_setup.bash
-source;share/TVFGO/local_setup.dsv
-source;share/TVFGO/local_setup.ps1
-source;share/TVFGO/local_setup.sh
-source;share/TVFGO/local_setup.zsh

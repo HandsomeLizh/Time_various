@@ -1,4 +1,0 @@
-Invoking command in '/home/li/Time_various/build/irt_nav_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/li/Time_various/build/irt_nav_msgs -- -j20 -l20
-Invoked command in '/home/li/Time_various/build/irt_nav_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/li/Time_various/build/irt_nav_msgs -- -j20 -l20
-Invoking command in '/home/li/Time_various/build/irt_nav_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/li/Time_various/build/irt_nav_msgs
-Invoked command in '/home/li/Time_various/build/irt_nav_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/li/Time_various/build/irt_nav_msgs

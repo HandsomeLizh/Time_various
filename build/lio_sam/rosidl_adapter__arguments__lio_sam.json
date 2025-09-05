@@ -1,7 +1,0 @@
-{
-  "package_name": "lio_sam",
-  "non_idl_tuples": [
-    "/home/li/Time_various/src/timevariousFGO/LIOSAM:msg/CloudInfo.msg",
-    "/home/li/Time_various/src/timevariousFGO/LIOSAM:srv/SaveMap.srv"
-  ]
-}
